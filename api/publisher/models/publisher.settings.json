@@ -1,14 +1,18 @@
 {
   "kind": "collectionType",
-  "collectionName": "publishes",
+  "collectionName": "publishers",
   "info": {
-    "name": "publish"
+    "name": "publisher"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
+    "games": {
+      "collection": "game",
+      "via": "publisher"
+    },
     "name": {
       "type": "string",
       "required": true,
@@ -16,12 +20,7 @@
     },
     "slug": {
       "type": "uid",
-      "targetField": "name",
-      "required": true
-    },
-    "games": {
-      "via": "publish",
-      "collection": "game"
+      "targetField": "name"
     }
   }
 }

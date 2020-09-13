@@ -80,9 +80,9 @@
       "via": "games",
       "dominant": true
     },
-    "publish": {
-      "model": "publish",
-      "via": "games"
+    "publisher": {
+      "via": "games",
+      "model": "publisher"
     }
   }
 }
