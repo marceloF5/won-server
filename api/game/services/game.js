@@ -26,7 +26,7 @@ async function getGameInfo(slug) {
         .getAttribute("xlink:href")
         .replace(/_/g, "")
         .replace(/[^\w-]+/g, "")
-      : "Free",
+      : "FREE",
     short_description: description.textContent.trim().slice(0, 160),
     description: description.innerHTML,
   }
