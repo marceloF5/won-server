@@ -10,8 +10,8 @@
   },
   "attributes": {
     "games": {
-      "collection": "game",
-      "via": "publisher"
+      "via": "publisher",
+      "collection": "game"
     },
     "name": {
       "type": "string",
