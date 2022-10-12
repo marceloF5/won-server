@@ -26,8 +26,8 @@ yarn develop
 
 The urls to access are:
 
-- `http://localhost:1337/admin` - The Dashboard to create and populate data
-- `http://localhost:1337/graphql` - GraphQL Playground to test your queries
+- `https://won-server.herokuapp.com/admin` - The Dashboard to create and populate data
+- `https://won-server.herokuapp.com/graphql` - GraphQL Playground to test your queries
 
 The first time to access the Admin you'll need to create an user.
 
@@ -40,13 +40,13 @@ In order to make it work, follow the steps:
 - With Strapi running run the following comand in your console:
 
 ```bash
-$ curl -X POST http://localhost:1337/games/populate
+$ curl -X POST https://won-server.herokuapp.com/games/populate
 
 # you can pass query parameters like:
-$ curl -X POST http://localhost:1337/games/populate?page=2
-$ curl -X POST http://localhost:1337/games/populate?search=simcity
-$ curl -X POST http://localhost:1337/games/populate?sort=rating&price=free
-$ curl -X POST http://localhost:1337/games/populate?availability=coming&sort=popularity
+$ curl -X POST https://won-server.herokuapp.com/games/populate?page=2
+$ curl -X POST https://won-server.herokuapp.com/games/populate?search=simcity
+$ curl -X POST https://won-server.herokuapp.com/games/populate?sort=rating&price=free
+$ curl -X POST https://won-server.herokuapp.com/games/populate?availability=coming&sort=popularity
 ```
 
 ## Using dump
